@@ -59,6 +59,23 @@ btn.addEventListener('click', function(){
         }
     }
 
+    if(!(para1.checked||para2.checked||para3.checked||para4.checked)){
+        for(let i = 0; i<domain.lower.length; i++){
+            sample.push(domain.lower[i]);
+        }
+
+        for(let i = 0; i<domain.upper.length; i++){
+            sample.push(domain.upper[i]);
+        }    
+        for(let i = 0; i<domain.special.length; i++){
+            sample.push(domain.special[i]);
+        }
+
+        for(let i = 0; i<domain.digit.length; i++){
+            sample.push(domain.digit[i]);
+        }
+    }
+
     let pass = '';
     if(Number(len.value)>=3){
         lenValue = Number(len.value);
