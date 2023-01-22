@@ -1,0 +1,84 @@
+body {
+
+    background-image: url("cover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Courier Prime", monospace;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 2.5%;
+}
+
+header h1 {
+  font-size: 70px;
+  font-weight: 500;
+  color: #f9c784;
+  border-right: 4px solid #000;
+  animation: cursor 1s infinite step-end, typing 4s steps(16);
+  white-space: nowrap;
+  overflow: hidden;
+}
+@keyframes cursor{
+  0%, 100%{border-color: transparent;}
+  50%{border-color: #000;}
+}
+
+@keyframes typing{
+  0%{ width: 0%} /*Text is hidden*/
+  30%{ width: 30%;} /*The enitre header will be typed out*/
+  80%{ width: 75%;} /*Text stays visible*/
+}
+
+
+.form-check{
+    position: relative;
+    margin-bottom: 0%;
+    margin-top: 4%;
+    margin-left: 2%;
+    background-color: #f9c784;
+
+    padding: 5px 10px;
+
+    border-radius: 2px;
+}
+
+
+
+
+#text{
+    background-color: #F64C72;
+    text-align: center;
+    margin-top: 10%;
+    padding: 20px 10px;
+    height: 50%;
+    border: 2px solid black;
+    border-radius: 5px;
+
+    font-family: Squared;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.btn{
+    width: 10%;
+
+
+    border: 2px solid #F64C72;
+    margin-left: 45%;
+    margin-top: 5%;
+    background-color: inherit;
+}
+
+
+#size{
+    margin-right: 20px;
+}
